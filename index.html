@@ -45,9 +45,24 @@
     <div class="quarter">
         <img src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg"
         alt="image-4"
-        style="width:20%">
+        style="width:20%"
+        onclick="enlargeImg()"
+        id="img4"> 
+      <br /><br /><br /> 
+      <button onclick="resetImg()">Reset</button> 
       <h3> High School - Junior </h3>
       <p>Just some random text</p>
+      <script> 
+        img = document.getElementById("img4"); 
+        function enlargeImg() { 
+          img.style.transform = "scale(1.5)"; 
+          img.style.transition = "transform 0.25s ease"; 
+        } 
+        function resetImg() { 
+          img.style.transform = "scale(1)"; 
+          img.style.transition = "transform 0.25s ease"; 
+        } 
+      </script> 
     </div>
   </div>
   
