@@ -8,3 +8,6 @@ function resetImg() {
   img.style.transform = "scale(1)"; 
   img.style.transition = "transform 0.s25s ease"; 
 }
+          <button class="resetimage" onclick="resetImg()">
+            Reset
+          </button>
